@@ -1,0 +1,4 @@
+==========
+The ITDC coding-standards for PHP_CodeSniffer has been derived from the PSR2 standards.
+==========
+
