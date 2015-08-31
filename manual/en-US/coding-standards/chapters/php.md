@@ -27,7 +27,7 @@ Anywhere you are unconditionally including a file, use `require_once`. Anywhere 
 > `include_once` and `require_once` are PHP language statements, not functions. The correct formatting is:
 >
 >
-> `require_once JPATH_COMPONENT . '/helpers/helper.php';`
+> `require_once HOMEDIR . '/helpers/helper.php';`
 
 You should not enclose the filename in parentheses.
 
