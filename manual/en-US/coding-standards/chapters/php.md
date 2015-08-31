@@ -169,15 +169,15 @@ There should always be a space before and after the concatenation operator ('.')
 
 ```php
 $id = 1;
-echo JRoute::_('index.php?option=com_foo&task=foo.edit&id=' . (int) $id);
+echo SomeClass::method('path/uri/?id=' . (int) $id);
 ```
 
 If the concatenation operator is the first or last character on a line, both spaces are not required. For example:
 
 ```php
 $id = 1
-echo JRoute::_(
-    'index.php?option=com_foo&task=foo.edit&id=' . (int) $id
+echo SomeClass::method(
+    'path/uri/?id=' . (int) $id
     . '&layout=special'
 );
 ```
@@ -389,9 +389,9 @@ Classes should be given descriptive names. Avoid using abbreviations where possi
 
 For example:
 
--   JHtmlHelper
--   JXmlParser
--   JModel
+-   HtmlHelper
+-   XmlParser
+-   Model
 
 ### Functions and Methods
 
@@ -402,15 +402,15 @@ For example:
 -   connect();
 -   getData();
 -   buildSomeWidget();
--   jImport();
--   jDoSomething();
+-   jmport();
+-   doSomething();
 
 Private class members (meaning class members that are intended to be used only from within the same class in which they are declared) are preceded by a single underscore. Properties are to be written in underscore format (that is, logical words separated by underscores) and should be all lowercase.
 
 For example:
 
 ```php
-class JFooHelper
+class FooHelper
 {
 	protected $field_name = null;
 
